@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css">
+    
   </head>
 
   <body class="rp">
@@ -12,18 +13,19 @@
     </ul>
 <h2 id="rg">REGISTRATION FORM</h2>
 <img src="Images/download.png"  >
-<form >
+<form id="register_form" >
   <label for="first_name">First name:</label><br>
   <input type="text" id="first_name" name="first_name" ><br>
   <label for="last_name">Last name:</label><br>
   <input type="text" id="last_name" name="last_name" value=""><br>
   <label for="email_id">Email_ID:</label><br>
   <input type="email" id="email_id" name="email_id" ><br>
-   <label for="Create_password">Create password:</label><br>
-  <input type="password" name="Create_password"><br>
+   <label for="create_password">Create password:</label><br>
+  <input type="password" id="create_password" name="create_password"><br>
   <label for="confirm_password">Confirm password:</label><br>
-  <input type="password" name="confirm_password"><br><br>
-  <button formaction="action_1.html">SIGN_UP </button>    <input type="reset" value="Reset">
+  <input type="password" id="confirm_password" name="confirm_password"><br><br>
+  <button formaction="action_1.html" >SIGN_UP </button>    <input type="reset" value="Reset">
+   <!--<input type="submit"   value="Submit">-->
 
   
 <h1>Welcome to SUNY New Paltz</h1>
@@ -36,7 +38,7 @@
   <div>2. Electronics</div>
   <div>3. Mechanics</div>  
 </div>
-
+<script src="main.js"></script>
 </body>
 </html>
 
