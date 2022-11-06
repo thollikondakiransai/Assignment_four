@@ -20,10 +20,10 @@ function UserObject(e){
 
 function User(firstname,lastname,email_id,create_password,confirm_password,note){
     this.firstname = firstname;
-    this.lastname = lastname; //document.getElementById("lastname").value;
-    this.email_id = email_id; //document.getElementById("username").value;
-    this.create_password = create_password; //document.getElementById("password").value;
-    this.confirm_password = confirm_password; //document.getElementById("password").value;
+    this.lastname = lastname; 
+    this.email_id = email_id; 
+    this.create_password = create_password; 
+    this.confirm_password = confirm_password;
     this.note = note;
 }
 
