@@ -33,11 +33,10 @@ async function Read(note) { // {userName: "sda", password: "gsdhjsga"}
 // Create  note - 
 async function newnote(note) {
     let cnote = await getNote(note);
-    if(cnote.length > 0) throw Error("Username already in use");
+    //if(cnote.length > 0) throw Error("Username already in use");
   
-    const sql = `INSERT INTO notes (noteID, noteContent
-        )
-      VALUES ("${note.noteID}","${note.noteContent}");
+    const sql = `INSERT INTO notes (userID, noteContent )
+      VALUES ("${note.userID}","${note.noteContent}");
     `
     await con.query(sql);
    // return await login(note);
@@ -77,7 +76,7 @@ async function getNote(note) {
   } else {
     sql = `
     SELECT * FROM notes 
-      WHERE noteID = "${note.noteID}"
+    WHERE userID = ${note.userID}
   `;
   }
   return await con.query(sql);  
