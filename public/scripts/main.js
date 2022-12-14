@@ -113,9 +113,9 @@ if(loginForm) loginForm.addEventListener('submit', login);
 function login(e) {
   e.preventDefault();
 
-  let userName = document.getElementById("username").value;
-  let password = document.getElementById("pswd").value;
-  let users1 = new User(userName, password);
+  let email_id = document.getElementById("email_id").value;
+  let password = document.getElementById("password").value;
+  let users1 = new User(email_id, password);
 
   fetchData("/users/login", users1, "POST")
   .then((data) => {
