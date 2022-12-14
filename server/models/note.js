@@ -39,7 +39,7 @@ async function newnote(note) {
       VALUES ("${note.userID}","${note.noteContent}");
     `
     await con.query(sql);
-   // return await login(note);
+   
   }
   
 
