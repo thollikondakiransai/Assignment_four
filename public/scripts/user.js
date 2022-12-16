@@ -27,7 +27,7 @@ function login(e) {
   fetchData("/users/login", user, "POST")
   .then((data) => {
     setCurrentUser(data);
-    window.location.href = "bmi.html";
+    window.location.href = "Assignment2_three.html";
   })
   .catch((err) => {
     let p = document.querySelector('.error');
@@ -36,7 +36,7 @@ function login(e) {
 }
  
 // register functionality
-let regForm = document.getElementById("reg-form");
+let regForm = document.getElementById("register_form");
 if(regForm) regForm.addEventListener('submit', register);
 
 function register(e) {
@@ -49,7 +49,7 @@ function register(e) {
   fetchData("/users/register", user, "POST")
   .then((data) => {
     setCurrentUser(data);
-    window.location.href = "bmi.html";
+    window.location.href = "Assignment2_two.html";
   })
   .catch((err) =>{
     let p = document.querySelector('.error');
