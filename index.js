@@ -8,15 +8,12 @@ const noteRoutes = require('./server/routes/note');
 app.use(express.json());
 
 app.use(express.static(__dirname + "/public"));
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, "/public/Assignment_three.html")));
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, "/public/Assignment2_two.html")));
 
 
 app.use(express.static(__dirname + "/public"));
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, "/public/Assignment_one.html")));
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, "/public/Assignment2_three.html")));
 
-
-app.use(express.static(__dirname + "/public"));
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, "/public/Assignment_two.html")));
 //CORS middleware
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");  
